@@ -521,15 +521,6 @@ public class MultiImageView extends FrameLayout implements View.OnClickListener,
         }
     }
 
-    @Override
-    public void onAudioSessionId(int audioSessionId) {
-        if (exoPlayer.getAudioFormat() == null) {
-            return;
-        }
-
-        callback.onAudioLoaded(this);
-    }
-
     private boolean hasMediaPlayerAudioTracks(MediaPlayer mediaPlayer) {
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {

@@ -24,11 +24,12 @@ android {
     buildToolsVersion '30.0.3'
 
     defaultConfig {
-        applicationId "bluehorse.clover"
+        applicationId "ucchi.clover"
         minSdkVersion 17
         targetSdkVersion 29
+        multiDexEnabled true
 
-        versionName "v3.20"
+        versionName "v3.21"
         // of the format XXYYZZ, where XX is major, YY is minor, ZZ is patch
         // (watch out for octal notation, never start with a 0)
         versionCode 32000
@@ -116,9 +117,9 @@ android {
         if (variant.buildType.name == "release") {
             variant.outputs.all {
                 if (variant.flavorName == "default") {
-                    outputFileName = new File("BlueClover-" + timestamp + ".apk")
+                    outputFileName = new File("GoldClover-" + timestamp + ".apk")
                 } else {
-                    outputFileName = new File("BlueClover-" + timestamp + "-" + variant.flavorName + ".apk")
+                    outputFileName = new File("GoldClover-" + timestamp + "-" + variant.flavorName + ".apk")
                 }
             }
         }
@@ -136,10 +137,10 @@ dependencies {
     implementation 'androidx.browser:browser:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 
-    implementation 'com.google.android.exoplayer:exoplayer-core:2.11.7'
-    implementation 'com.google.android.exoplayer:exoplayer-ui:2.11.7'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.13.3'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.13.3'
 
-    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.android.volley:volley:1.2.1'
     implementation 'com.squareup.okhttp3:okhttp:3.12.13'
     implementation 'com.squareup.okhttp3:okhttp-dnsoverhttps:3.12.13'
     //noinspection GradleDependency

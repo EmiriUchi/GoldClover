@@ -12,9 +12,13 @@
     </string>
 
     <string-array name="extra_abouts">
-        <item>Rainbow Dash is best pony</item>
+        <item>Ucchi is best girl</item>
         <item></item>
-        <item>https://www.youtube.com/watch?v=qVCFV7jT9ho</item>
+        <item>https://www.pixiv.net/en/artworks/69994912</item>
+
+        <item>Find Gold Clover on GitHub</item>
+        <item>View the source code</item>
+        <item>https://github.com/EmiriUchi/GoldClover</item>
 
         <item>Find Blue Clover on GitHub</item>
         <item>View the source code</item>
