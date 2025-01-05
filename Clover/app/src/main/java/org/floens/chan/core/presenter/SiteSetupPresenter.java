@@ -12,6 +12,7 @@ public class SiteSetupPresenter {
     private Callback callback;
     private Site site;
     private DatabaseManager databaseManager;
+    private boolean hasLogin;
 
     @Inject
     public SiteSetupPresenter(DatabaseManager databaseManager) {
@@ -22,6 +23,11 @@ public class SiteSetupPresenter {
         this.callback = callback;
         this.site = site;
 
+        hasLogin = site.feature(Site.Feature.LOGIN);
+        if (hasLogin) {
+            callback.showLogin();
+        }
+
         List<SiteSetting> settings = site.settings();
         if (!settings.isEmpty()) {
             callback.showSettings(settings);
@@ -30,6 +36,9 @@ public class SiteSetupPresenter {
 
     public void show() {
         setBoardCount(callback, site);
+        if (hasLogin) {
+            callback.setIsLoggedIn(site.actions().isLoggedIn());
+        }
     }
 
     private void setBoardCount(Callback callback, Site site) {
@@ -42,6 +51,11 @@ public class SiteSetupPresenter {
 
     public interface Callback {
         void setBoardCount(int boardCount);
+
+        void showLogin();
+
+        void setIsLoggedIn(boolean isLoggedIn);
+
 
         void showSettings(List<SiteSetting> settings);
     }
