@@ -81,15 +81,15 @@ android {
         // The app name refers to the name as displayed on the launcher.
         "default" {
             dimension "default"
-            resValue "string", "app_name", "Blue Clover"
+            resValue "string", "app_name", "Gold Clover"
             resValue "string", "app_flavor_name", "(build $timestamp)"
             buildConfigField "String", "BUILD_HASH", "\"$timestamp\""
-            buildConfigField "String", "UPDATE_API_ENDPOINT", "\"https://nnuudev.github.io/BlueClover/api/update.json\""
+            buildConfigField "String", "UPDATE_API_ENDPOINT", "\"https://EmiriUchi.github.io/GoldClover/api/update.json\""
         }
 
         dev {
             dimension "default"
-            resValue "string", "app_name", "Blue Clover"
+            resValue "string", "app_name", "Gold Clover"
             resValue "string", "app_flavor_name", "(build $timestamp-dev)"
             buildConfigField "String", "BUILD_HASH", "\"\""
             buildConfigField "String", "UPDATE_API_ENDPOINT", "\"\""

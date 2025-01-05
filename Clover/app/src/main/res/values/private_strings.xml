@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- No need to update the changelog, we can't get it translated in time. -->
-    <string name="changelog_30002" translatable="false">
+    <string name="changelog_300021" translatable="false">
         <![CDATA[
-            <h3>Blue Clover was updated</h3>
-            Blue Clover was updated to v3.20<br>
+            <h3>Gold Clover was updated</h3>
+            Gold Clover was updated to v3.21<br>
             <br>
             <b>New in this version:</b><br>
-            Clover is now <i>20% cooler</i>.
+            Clover is now <i>20% more gross</i>.
         ]]>
     </string>
 
@@ -15,6 +15,10 @@
         <item>Ucchi is best girl</item>
         <item></item>
         <item>https://www.pixiv.net/en/artworks/69994912</item>
+
+        <item>Rainbow Dash is best pony</item>
+        <item></item>
+        <item>https://www.youtube.com/watch?v=qVCFV7jT9ho</item>
 
         <item>Find Gold Clover on GitHub</item>
         <item>View the source code</item>
