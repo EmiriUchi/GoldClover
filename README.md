@@ -4,7 +4,7 @@
 
 This is just Blue Clover with pass support added back. Don't try to post without one because it probably won't work.
 
-If you're having any issues pasting the following in Behavior > Custom User-Agent might fix it:
+If you're having any issues, pasting the following in Behavior > Custom User-Agent might fix them:
 
 ```Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko```
 
